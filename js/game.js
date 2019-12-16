@@ -4,8 +4,7 @@ var game = {
 
     // an object where to store game information
     data : {
-        // score
-        score : 0
+        playerPosition
     },
 
 
@@ -13,7 +12,7 @@ var game = {
     "onload" : function () {
         // Initialize the video.
         if (!me.video.init(960, 640, {wrapper : "screen", scale : "auto"})) {
-            alert("Your browser does not support HTML5 canvas.");
+            alert("Your browser does not support HTML5 canvas. Please upgrade your browser to play ByteWorld.");
             return;
         }
 
